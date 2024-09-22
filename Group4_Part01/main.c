@@ -31,7 +31,7 @@ void updateDutyCycle(int change)
         dutyCycle = 0;
 }
 
-void GPIOF_Handler(void)
+void GPIO_INTERRUPT_HANDLER(void)
 {
     if (GPIO_PORTF_RIS_R & 0x10)
     {
